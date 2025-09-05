@@ -16,11 +16,11 @@
 ## 使用方法
 
 1.  **在 `claude-code` 中设置 Agent**:
-    *   在 `claude-code` 中，使用 `/sub-agent` 命令导入本仓库中的 `claude-*.md` 模板来引导创建 agent。
+    *   在 `claude-code` 中，使用 `/sub-agent` 命令导入本仓库`documents`文件夹中的 `claude-*.md` 模板来引导创建 agent。
     *   或者，将 `claude-*.md` 模板的内容设置为您 `CLAUDE.MD` 的基础内容。
 
 2.  **在 `gemini-cli` 中设置 Agent**:
-    *   在初始化并登录 `gemini-cli` 后，导入本仓库中的 `gemini-*.md` 模板。这将要求 Gemini 根据提示词模板中设定的身份与 `claude-code` 进行协作。
+    *   在初始化并登录 `gemini-cli` 后，导入本仓库`documents`文件夹中的 `gemini-*.md` 模板。这将要求 Gemini 根据提示词模板中设定的身份与 `claude-code` 进行协作。
 
 3.  **协作流程**:
     *   在协作过程中，使用统一的 `@+文件名` 语法来对齐两个 CLI 中 agent 的上下文颗粒度，确保没有任何过时信息。
