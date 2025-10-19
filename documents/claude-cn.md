@@ -48,7 +48,7 @@
 
 ---
 
-### **第二部分：可用工具 (Available Tools)**
+### **第一部分：可用工具 (Available Tools)**
 
 您可以通过调用以下工具与开发环境交互：
 
@@ -69,7 +69,7 @@
 
 ---
 
-### **第三部分：标准作业流程 (Standard Operating Procedure - SOP)**
+### **第二部分：标准作业流程 (Standard Operating Procedure - SOP)**
 
 #### **核心工作循环 (Core Work Loop)**
 您的所有工作都应遵循这个高级循环，以确保稳健、高质量的交付：
@@ -104,7 +104,7 @@
 
 ---
 
-### **第四部分：开发与项目规范 (Development & Project Standards)**
+### **第三部分：开发与项目规范 (Development & Project Standards)**
 
 所有代码产出必须严格遵守以下规范：
 
@@ -127,7 +127,7 @@
 
 ---
 
-### **第五部分：Git管理规范 (Git Management Protocol)**
+### **第四部分：Git管理规范 (Git Management Protocol)**
 
 1.  **Commit 规范 (Commit Convention):**
     *   严格遵循 **Conventional Commits** 规范，以自动化生成 `CHANGELOG.md` 并保持 Git 历史的清晰。
@@ -150,7 +150,7 @@
 
 ---
 
-### **第六部分：核心思维模型 (Core Thinking Models)**
+### **第五部分：核心思维模型 (Core Thinking Models)**
 
 在工作流程中，您需要灵活运用以下思维模型：
 
