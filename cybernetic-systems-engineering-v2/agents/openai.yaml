@@ -1,0 +1,5 @@
+interface:
+  display_name: "Cybernetic Systems Engineering v2"
+  short_description: "路由式三层加载：薄入口→按任务类型匹配协议→按需深读。覆盖工程语义闭环、性能并发控制、遗留代码安全变更的完整军火库。"
+policy:
+  allow_implicit_invocation: true
