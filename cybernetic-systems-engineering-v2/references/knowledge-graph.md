@@ -43,12 +43,19 @@
 
 共享基础概念
   ├── 行为协议 ────────────────────────→ ../SKILL.md §行为协议 + engineering-forethought.md
-  │   ├── 主动审视项目质量
-  │   ├── 规划阶段补充工程约束
+  │   ├── 主动审视项目质量（会话启动扫描）
+  │   ├── 规划阶段补充工程约束（预实现校准对话）
   │   ├── 补丁漂移识别与升级触发
   │   ├── 预见性自检 5 问
   │   ├── 预训练知识调用框架
-  │   └── 工程师式自信的操作化
+  │   ├── 工程师式自信的操作化
+  │   └── Agent 主动交互协议 ──────────→ agent-interaction-protocols.md
+  │       ├── 会话启动审视协议
+  │       ├── 预实现校准对话（选择题式追问）
+  │       ├── 漂移中断协议（A/B 模板 + 阈值表）
+  │       ├── 残余风险追踪协议（跨会话记忆）
+  │       ├── 工程师式挑战模板
+  │       └── 交互节奏控制（频率上限 + 沉默规则）
   ├── GDA 四步法 ──────────────────────→ ../SKILL.md L0 + gda-framework.md
   ├── 项目级控制拓扑 ──────────────────→ project-control-topology.md
   │   ├── 控制面 / 数据面 / 状态面 三分法
@@ -86,6 +93,7 @@
 | anti-chatter | `dynamic-control-diseases.md` §anti-chatter |
 | anti-windup | `dynamic-control-diseases.md` §anti-windup |
 | backoff（退避） | `dynamic-control-diseases.md` §退避策略 |
+| agent interaction protocols（Agent 主动交互协议） | `agent-interaction-protocols.md` |
 | behavioral protocol（行为协议） | `../SKILL.md` §行为协议 + `engineering-forethought.md` |
 | brownout（依赖部分故障） | `playbooks.md` §依赖brownout |
 | canary | `decision-principles.md` §演进式架构 |
@@ -100,6 +108,7 @@
 | decision principles（决策准则） | `decision-principles.md` |
 | drift detection（漂移识别） | `engineering-forethought.md` §补丁漂移识别 |
 | dynamic control diseases（动态控制病） | `dynamic-control-diseases.md` |
+| drift interrupt（漂移中断） | `agent-interaction-protocols.md` §漂移中断协议 |
 | engineering forethought（工程远见） | `engineering-forethought.md` + `../SKILL.md` §行为协议 |
 | escalation trigger（升级触发） | `engineering-forethought.md` §升级触发与决策框架 |
 | evolutionary architecture（演进式架构） | `decision-principles.md` §演进式架构 |
@@ -119,9 +128,11 @@
 | owner matrix（权责矩阵） | `project-control-topology.md` §owner matrix |
 | patching vs. designing（修补 vs. 设计） | `engineering-forethought.md` §升级触发与决策框架 |
 | playbooks（实战剧本） | `playbooks.md` |
+| pre-implementation calibration（预实现校准） | `agent-interaction-protocols.md` §预实现校准对话 |
 | pre-training knowledge（预训练知识） | `engineering-forethought.md` §预训练知识调用框架 |
 | project control topology（项目级控制拓扑） | `project-control-topology.md` |
 | recovery evidence（恢复证据） | `quality-gates.md` §交付格式 |
+| residual risk tracking（残余风险追踪） | `agent-interaction-protocols.md` §残余风险追踪协议 |
 | router（路由索引） | `router.md`（根目录） |
 | sampling aliasing（采样别名） | `dynamic-control-diseases.md` §采样与观测 |
 | sensor engineering（传感器工程） | `sensor-engineering.md` |
