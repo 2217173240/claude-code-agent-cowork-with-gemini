@@ -11,6 +11,8 @@
 - 顺手改名/抽方法/删分支/改历史逻辑 → `../references/class-c-legacy-safety.md`
 - 跨模块/动schema/动共享接口 → `../references/project-control-topology.md`
 - 性能退化/振荡/抖 → `../references/dynamic-control-diseases.md`
+- 同一文件反复改/分支膨胀/workaround扩散 → `../references/engineering-forethought.md`
+- 代码审查/PR Review/演进审计 → `../references/review-protocol.md`
 - bugfix / 架构收口 / 迁移 / flake 等 → `../references/playbooks.md`
 - 不确定属于哪类 → `../router.md` 信号自检
 
@@ -40,11 +42,9 @@
 
 在提示词里显式写：
 
-- `$cybernetic-systems-engineering`
+- `$cybernetic-systems-engineering-v2`
 
-如果任务会持续多轮、需要检查点和恢复，建议同时写：
-
-- `$harness`
+如果任务会持续多轮、需要检查点和恢复，可以同时加载 harness-engineering skill 搭配使用。
 
 ## 最小可用控制模板 v2
 
@@ -73,10 +73,11 @@
 
 ### Plan
 
-1. 先测量
-2. 再最小修复
-3. 分层验证
-4. 记录 residual risk
+1. 先测量（建立观测基线）
+2. 判断误差是局部的还是结构性的
+3. 局部 → 最小修复；结构性 → 升级为结构性方案（不累积漂移）
+4. 分层验证（L0 → L1 → L2）
+5. 记录 residual risk（写入 `.cse-residual-risks.md`）
 
 ## 一个典型例子
 
@@ -108,5 +109,5 @@
 而是：
 
 - 更快得到可信误差信号
-- 更小地改动
-- 更清楚地区分“已验证”与“尚未验证”
+- 工程上可持续地改动（不累积漂移）
+- 更清楚地区分”已验证”与”尚未验证”

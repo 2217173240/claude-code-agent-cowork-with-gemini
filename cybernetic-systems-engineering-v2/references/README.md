@@ -41,7 +41,7 @@
 | `sensor-engineering.md` | 基线建立、传感器去噪、schema-sensitive 路径、无观测不优化 | 原 SKILL.md §4.1-4.3 |
 | `dynamic-control-diseases.md` | 采样与观测新鲜度、去抖/滞回/退避/冷却、anti-chatter/anti-windup/控制器冲突 | 原 SKILL.md §4.4-4.6 |
 | `decision-principles.md` | 机制优于策略、MTTR-first、抽象审查协议、演进式架构 | 原 SKILL.md §5.1-5.4 |
-| `playbooks.md` | 实战剧本 10 类：bugfix/测试补强/架构收口/性能退化/异步背压/迁移/brownout/配置回滚/flake/成本/SLO | 原 SKILL.md §8 |
+| `playbooks.md` | 实战剧本 12 类：bugfix/测试补强/架构收口/性能退化/异步背压/迁移/brownout/配置回滚/flake/成本/SLO/演进叙事审计 | 原 SKILL.md §8 |
 | `gda-framework.md` | GDA 五维方法论、四步法完整论述、现代映射附录 | 原 gda-framework.md |
 
 ### 导航
