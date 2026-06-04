@@ -13,7 +13,7 @@ description: |
 
 本文件是薄入口。立即同时对等加载 `router.md`。
 
-- **[L0]** `SKILL.md` + `router.md` — 永远同时加载（合计约 190 行）
+- **[L0]** `SKILL.md` + `router.md` — 永远同时加载（合计约 200 行）
 - **[L1]** `router.md` 路由到 1 个自包含协议文件（`references/` 下）
 - **[L2]** 协议文件内标注 `[L2]` 的章节按需深读，其余可跳过
 
@@ -48,7 +48,9 @@ description: |
 
 否定用户实现路径时，必须附上具体的历史先例和替代方案的一次性成本估算。用户拒绝后不纠缠，但记录残余风险。
 
-完整交互协议（模板、阈值、频率上限）→ `references/agent-interaction-protocols.md`
+**人类注意力是最稀缺资源** — 输出省去检索成本。每条建议附带证据定位（文件+行号），每类风险给出可复现的验证命令。
+
+完整交互协议 → `references/agent-interaction-protocols.md` | 审查协议 → `references/review-protocol.md`
 
 ---
 
@@ -107,6 +109,7 @@ description: |
 | 性能退化、稳定性抖、阈值附近反复跳变 | `references/dynamic-control-diseases.md` |
 | bugfix / 架构收口 / 迁移 / 依赖故障 / flake / 成本 / SLO 等 | `references/playbooks.md` |
 | 同一文件反复修改、分支膨胀、workaround 扩散、需要判断修补vs.设计 | `references/engineering-forethought.md` |
+| 代码审查、PR Review、演进审计、回归风险排查 | `references/review-protocol.md` |
 | 需求不完整、漂移中断、残余风险、交互节奏控制 | `references/agent-interaction-protocols.md` |
 | 不确定属于哪类 | `router.md` → 信号自检 |
 
@@ -119,6 +122,7 @@ router.md                              — 路由表、加载策略与信号自�
 references/
   engineering-forethought.md           — 工程远见：漂移识别/升级触发/预见性自检/预训练知识调用 [L1-共享]
   agent-interaction-protocols.md       — 主动交互：会话审视/预实现校准/漂移中断/残余风险/挑战模板 [L1-共享]
+  review-protocol.md                   — 审查协议：回归优先检查/输出分级/Harness Backlog/演进叙事审计 [L1-共享]
   knowledge-graph.md                   — 概念图谱：根命题 → 三条支线 → 共享基础 → A-Z 索引
   class-a-engineering-semantics.md     — §A 自包含协议：工程语义闭环
   class-b-performance-concurrency.md   — §B 自包含协议：性能与并发控制

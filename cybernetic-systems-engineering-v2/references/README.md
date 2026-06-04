@@ -30,6 +30,7 @@
 |------|------|
 | `engineering-forethought.md` | 工程远见：漂移识别、升级触发、预见性自检 5 问、预训练知识调用框架 |
 | `agent-interaction-protocols.md` | 主动交互：会话审视、预实现校准、漂移中断、残余风险追踪、工程师式挑战模板 |
+| `review-protocol.md` | 审查协议：回归优先检查清单/输出分级/Harness Backlog/演进叙事审计 |
 | `quality-gates.md` | 6 个高风险反模式 + 7 项交付格式模板 |
 
 ### L2 — 按需深读
@@ -49,4 +50,5 @@
 |------|------|
 | `engineering-forethought.md` | 工程远见与技术视野：漂移识别、升级触发框架、预见性自检 5 问、预训练知识调用、工程师式自信的操作化 |
 | `agent-interaction-protocols.md` | Agent 主动交互协议：会话审视、预实现校准、漂移中断、残余风险追踪、工程师式挑战模板、交互节奏控制 |
+| `review-protocol.md` | 审查协议：回归优先检查清单（5 项）/ 审查输出分级（Must-fix/Should-fix/Follow-ups/Tests to add/Risk Register）/ Harness Backlog 生成 / 演进叙事审计 / 高风险区域清单 |
 | `knowledge-graph.md` | 概念图谱：根命题 → 三条支线 → 共享基础 → 概念 A-Z 索引 |

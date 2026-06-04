@@ -21,6 +21,7 @@
 | 成本 / SLO 漂移 | 成本失控、SLO 长期漂移 | `references/playbooks.md` §成本失控 / §SLO漂移 | `references/decision-principles.md` |
 | 配置异常 | 变更后系统行为突变、灰度回放异常 | `references/playbooks.md` §配置回滚 | `references/sensor-engineering.md` |
 | 依赖故障 | 下游慢/挂/brownout、部分降级 | `references/playbooks.md` §依赖brownout | `references/decision-principles.md` |
+| 代码审查 / PR Review | diff、commit、commit range、全库审计 | `references/review-protocol.md` | `references/quality-gates.md` |
 
 ---
 
