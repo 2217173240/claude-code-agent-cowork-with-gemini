@@ -16,7 +16,7 @@
 
 ## 核心产品：CSE v2
 
-**`cybernetic-systems-engineering-v2/`** 是本仓库的核心。它把软件开发建模为闭环控制系统，用三层渐进路由加载替代了 v1 的 792 行单块文件：
+**`cybernetic-systems-engineering-v2/`** 是本仓库的核心。它把软件开发建模为闭环控制系统，用三层渐进路由加载替代了 v1 的 792 行单块文件。它是一个**自包的 skillbase**，不依附于任何外部 skill：
 
 ```
 [L0] SKILL.md (139行) + router.md (59行)     ← 永远同时加载：行为协议 + Control Contract + GDA + 路由表
@@ -26,7 +26,7 @@
   │     ├── §B 性能与并发控制：观测基线/影响矩阵/并发归属
   │     └── §C 遗留代码安全变更：边界冻结/特征测试/扩展点
   │
-  └─ [L2] 按需深读
+  └─ [L2] 按需深读（命中 L1 后必须继续激活，不得只停留在入口）
         ├── engineering-forethought    — 工程远见：漂移识别/升级触发/预见性自检/预训练知识调用
         ├── agent-interaction-protocols — 主动交互：会话审视/预实现校准/漂移中断/残余风险追踪
         ├── review-protocol            — 审查协议：回归优先/输出分级/Harness Backlog/演进叙事审计
@@ -94,8 +94,8 @@
 
 | 文件 | 内容 | 何时用 |
 |------|------|--------|
-| `SKILL.md` | L0 薄入口：行为协议（主动审视/预实现校准/漂移中断/残余风险）、核心哲学、Control Contract v2 模板、GDA 四步摘要、快速路由 | 每次加载 skill 时自动读取 |
-| `router.md` | L0 路由引擎：13 种任务类型匹配表、漂移/交互子路由、信号自检 4 问 | 与 SKILL.md 同时加载 |
+| `SKILL.md` | L0 薄入口：行为协议（主动审视/预实现校准/漂移中断/残余风险）、核心哲学、Control Contract v2 模板、GDA 四步摘要、快速路由、激活约束 | 每次加载 skill 时自动读取 |
+| `router.md` | L0 路由引擎：13 种任务类型匹配表、漂移/交互子路由、信号自检 4 问、必须深读清单 | 与 SKILL.md 同时加载 |
 | `agents/openai.yaml` | skill 元数据：display_name "Cybernetic Systems Engineering v2" | Codex/其他平台注册 skill 时 |
 | `assets/quickstart.md` | 一句话入口 + 最小控制模板 + 典型示例 | 首次使用，快速定位对应协议 |
 | `references/class-a-engineering-semantics.md` | §A 工程语义闭环：幂等/事务/状态机/异常/日志 — 从需求升级为工程约束 | 事务模糊、幂等缺失、异常吞没、状态机无约束 |
@@ -186,7 +186,7 @@
 | 上下文消耗 | ~800 行每次 | ~300 行起（L0 + L1），按需扩展到 L2 |
 | Agent 主动性 | 无 | 行为协议 + 交互协议（会话审视/预实现校准/漂移中断/残余风险） |
 | 审查能力 | 无 | 回归优先审查协议 + Harness Backlog 生成 |
-| 概念导航 | 线性阅读 | router + knowledge-graph 双向索引 |
+| 概念导航 | 线性阅读 | router + knowledge-graph 双向索引 + 激活清单 |
 
 v1 适合需要完整理论理解的场景。v2 适合实际工程使用——它把理论收束为可执行协议，并根据任务信号自动匹配。
 

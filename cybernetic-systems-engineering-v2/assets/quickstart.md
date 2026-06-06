@@ -46,6 +46,12 @@
 
 如果任务会持续多轮、需要检查点和恢复，可以同时加载 harness-engineering skill 搭配使用。
 
+## 跨平台自检
+
+- Linux / macOS: `./assets/check_activation_constraints.sh`
+- Windows: `assets\\check_activation_constraints.cmd`
+- 任意平台: `python assets/check_activation_constraints.py`
+
 ## 最小可用控制模板 v2
 
 ### Control Contract v2

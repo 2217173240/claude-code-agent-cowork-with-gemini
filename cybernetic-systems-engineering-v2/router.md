@@ -54,6 +54,25 @@
 
 ---
 
+## 激活清单
+
+命中任一路由后，先加载并满足对应协议，再继续下一步。下面是每条路由的**必须深读**清单：
+
+| 路由命中 | 必须深读 |
+|----------|----------|
+| `references/class-a-engineering-semantics.md` | `references/gda-framework.md`, `references/agent-interaction-protocols.md` |
+| `references/class-b-performance-concurrency.md` | `references/dynamic-control-diseases.md`, `references/sensor-engineering.md` |
+| `references/class-c-legacy-safety.md` | `references/decision-principles.md`, `references/engineering-forethought.md` |
+| `references/project-control-topology.md` | `references/gda-framework.md`, `references/quality-gates.md` |
+| `references/dynamic-control-diseases.md` | `references/sensor-engineering.md`, `references/playbooks.md` |
+| `references/playbooks.md` | `references/quality-gates.md`, `references/decision-principles.md` |
+| `references/engineering-forethought.md` | `references/agent-interaction-protocols.md`, `references/decision-principles.md` |
+| `references/review-protocol.md` | `references/quality-gates.md`, `references/knowledge-graph.md` |
+| `references/agent-interaction-protocols.md` | `references/engineering-forethought.md`, `references/quality-gates.md` |
+| `references/quality-gates.md` | `references/review-protocol.md`, `references/gda-framework.md` |
+
+---
+
 ## 概念图谱入口
 
 需要理解概念之间的关联网络时 → `references/knowledge-graph.md`
